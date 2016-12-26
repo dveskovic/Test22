@@ -1,8 +1,16 @@
 {
-      "name":"HelloWorld",
+      "name":"PMTest1",
       "description":"My first plugin",
-      "namespace":"HelloWorld",
-      "author":"Christian Moll",
-      "type":"template",
-      "serviceProvider":"HelloWorld\\Providers\\HelloWorldServiceProvider"
+      "namespace":"PMTest1",
+      "author":"Test",
+      "type":"backend",
+      "serviceProvider":"PMTest1\\Providers\\PMTestServiceProvider",
+      "dataProviders":
+      [
+            {
+            "key"           :"PMTest1\\Containers\\HeadContainer",
+            "name"          :"Head",
+            "description"   :"Displays a scripts into template's header"
+            }
+      ]
 }
