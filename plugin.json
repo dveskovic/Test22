@@ -1,16 +1,11 @@
 {
-      "name":"PMTest1",
+      "name":"HelloWorld",
       "description":"My first plugin",
-      "namespace":"PMTest1",
-      "author":"Test",
-      "type":"backend",
-      "serviceProvider":"PMTest1\\Providers\\PMTestServiceProvider",
-      "dataProviders":
-      [
-            {
-            "key"           :"PMTest1\\Containers\\HeadContainer",
-            "name"          :"Head",
-            "description"   :"Displays a scripts into template's header"
-            }
-      ]
+      "namespace":"HelloWorld",
+      "author":"Christian Moll",
+      "type":"template",
+      "serviceProvider":"HelloWorld\\Providers\\HelloWorldServiceProvider",
+      "dependencies" : {
+          "guzzlehttp/guzzle": "6.2.*"
+      }
 }

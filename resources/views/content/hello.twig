@@ -1,5 +1,9 @@
-<h1>PMTest44!</h1>
-
-{% if config('PMTest1.customer.id') == "1" %}
-    <h1>{{ test123 }}</h1>
-{% endif %}
+<h1>Hello World!</h1>
+<p>{{ packagistResult.total }} Ergebnise</p>
+<ul>
+    {% for packagistItem in packagistResult.results %}
+        <li>{{ packagistItem.name }} : {{ packagistItem.repository }}</li>
+    {% else %}
+        <li>keine Einträge</li>
+    {% endfor %}
+</ul>
